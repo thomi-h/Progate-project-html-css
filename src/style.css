@@ -1,0 +1,414 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 80px);
+  padding: 40px;
+}
+
+header img {
+  width: 335px;
+  height: auto;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header a:not(:last-child) {
+  margin-right: 50px;
+}
+
+header.sub {
+  background-color: #0f8b8d;
+  position: initial;
+  margin-bottom: 100px;
+}
+
+h2.sub {
+  color: #0f8b8d;
+  font-size: 48px;
+  line-height: 57.6px;
+  margin-bottom: 40px;
+}
+
+h2.center {
+  text-align: center;
+}
+
+p.sub {
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 28.8px;
+  text-align: center;
+}
+
+main {
+  border-radius: 0 0 30px 30px;
+  background: linear-gradient(rgba(15, 139, 141, 0.3), rgba(15, 139, 141, 0.5)),
+    url(./image/Coffe\ Header.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  color: #fff;
+  text-align: center;
+}
+
+main h1 {
+  margin: 0;
+  font-size: 70px;
+  width: 500px;
+  line-height: 84px;
+}
+main h2 {
+  margin: 0;
+  font-size: 36px;
+  width: 500px;
+  font-weight: normal;
+  line-height: 43.2px;
+}
+
+section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 120px;
+}
+
+section h2 {
+  color: #0fbd8d;
+  font-size: 48px;
+}
+
+section h2 a {
+  color: #ec9a29;
+}
+
+section p {
+  font-size: 24px;
+  line-height: 28.8px;
+  margin: 0 0 45px;
+  color: #143642;
+}
+
+section img {
+  border-radius: 20px;
+  width: 335px;
+  object-fit: cover;
+}
+
+#photo-1 {
+  height: 460px;
+}
+
+#photo-2 {
+  height: 335px;
+}
+
+#photo-3 {
+  width: 453px;
+  height: 453px;
+}
+
+section > div {
+  /* width: 50%; */
+  width: calc(50% - 40px);
+}
+
+.single {
+  display: block;
+  text-align: center;
+}
+
+section > .single {
+  text-align: center;
+  width: 100%;
+}
+
+section > div.single h2 {
+  border: none;
+  padding: 0;
+}
+
+section > div h2 {
+  display: inline-block;
+  padding-bottom: 20px;
+  border-bottom: 5px solid #ec9a29;
+}
+
+a.button {
+  border-radius: 1000px;
+  padding: 20px 70px;
+  font-size: 24px;
+  background-color: #a8201a;
+  color: white;
+  cursor: pointer;
+}
+
+section .gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+section .gallery img {
+  width: 30%;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.product-list > div:hover img {
+  transform: translateY(-200px) scale(1.3);
+}
+
+.product-list > div:hover p {
+  margin-top: 150px;
+}
+
+.product-list > div {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  background: url(./image/Coffee\ background.png) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 20px;
+}
+
+.product-list > div img {
+  height: 140px;
+  width: auto;
+  position: absolute;
+  left: 15px;
+  transition: 0.25s;
+}
+
+.product-list > div p {
+  margin-bottom: 0;
+  transition: 0.25s;
+}
+
+.product-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.product-section h2 {
+  font-size: 48px;
+  line-height: 58px;
+  color: #0f8b8d;
+}
+
+.product-section p {
+  font-size: 24px;
+  line-height: 29px;
+  color: #143642;
+}
+
+.product-section p.price {
+  font-size: 60px;
+  line-height: 72px;
+  color: #0f8b8d;
+  font-weight: bold;
+}
+
+/* .product-section > div {
+  width: 50%;
+} */
+
+.product-image {
+  height: 500px;
+}
+
+.product-description {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.product-description h2 {
+  display: inline-block;
+  padding: 0 0 20px;
+  border-bottom: solid 5px #ec9a29;
+}
+
+.product-description p {
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0 0 45px;
+}
+
+.store-location {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.store-title {
+  font-size: 48px;
+  line-height: 58px;
+  color: #0f8b8d;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.store-p {
+  font-size: 24px;
+  line-height: 29px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+iframe {
+  margin-top: 155px;
+  border: none;
+  width: 100%;
+  height: 580px;
+}
+
+.store-location > div {
+  width: 50%;
+}
+
+.store-location .card {
+  border-radius: 20px;
+  border: solid 1px #d2d2d2;
+  padding: 20px 45px;
+  width: calc(100% - 120px);
+  margin-bottom: 20px;
+}
+
+.store-location .card h3 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #143642;
+}
+
+.store-location .card p {
+  font-size: 20px;
+  line-height: 24px;
+  color: #143642;
+}
+
+.form {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 2px solid #d2d2d2;
+  border-radius: 20px;
+  padding: 50px 100px;
+  color: #143642;
+  text-align: center;
+}
+
+.form-element {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-element input {
+  width: 50%;
+  height: 71px;
+  background-color: #fff;
+  border: 2px solid #d2d2d2;
+  border-radius: 20px;
+  padding: 20px 50px;
+  font-size: 30px;
+}
+
+.form-element label {
+  width: 30%;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  align-self: center;
+}
+
+#message-label {
+  align-self: flex-start;
+  margin-top: 35px;
+}
+#message {
+  height: 200px;
+  margin-bottom: 70px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 100px;
+  background-color: #143642;
+  color: #fff;
+  border-radius: 30px 30px 0 0;
+  padding: 80px 130px;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+footer .logo {
+  width: 335px;
+  height: auto;
+}
+
+footer .icon {
+  width: 32px;
+  height: 32px;
+  filter: invert(100%);
+  margin-right: 25px;
+}
+
+footer span {
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+footer .head {
+  color: #ec9a29;
+}

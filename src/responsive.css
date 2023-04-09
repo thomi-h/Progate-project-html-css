@@ -1,0 +1,350 @@
+@media (max-width: 768px) {
+  /* * {
+    outline: 1px solid limegreen;
+  } */
+
+  header {
+    display: block;
+    padding: 20px 40px;
+  }
+
+  header img {
+    width: 135px;
+  }
+
+  header a {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  header div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  header h2 {
+    line-height: 43.2px;
+    font-size: 36px;
+  }
+
+  header p {
+    font: 16px;
+    line-height: 19.2px;
+  }
+
+  header.sub {
+    margin-bottom: 40px;
+  }
+
+  h2.sub {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  p.sub {
+    font-size: 12px;
+    line-height: 14.4px;
+    margin-bottom: 20px;
+  }
+
+  main {
+    width: 100%;
+    height: 470px;
+  }
+
+  main h1 {
+    font-size: 36px;
+    line-height: 43.2px;
+    text-align: center;
+    width: auto;
+    margin-bottom: 8px;
+  }
+
+  main h2 {
+    font-size: 16px;
+    line-height: 19.2px;
+    width: auto;
+  }
+
+  section {
+    flex-direction: column;
+    padding: 0 40px;
+    margin-top: 40px;
+  }
+
+  section div {
+    width: 100%;
+  }
+
+  section h2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 800;
+  }
+
+  section p {
+    font-size: 12px;
+    line-height: 14.4px;
+    margin-bottom: 20px;
+  }
+
+  a.button {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 8px 19px;
+  }
+
+  section > div h2 {
+    padding-bottom: 10px;
+  }
+
+  section.reverse {
+    flex-direction: column-reverse;
+  }
+
+  section div:has(img) {
+    text-align: center;
+  }
+
+  /* .small {
+    width: 70%;
+  } */
+
+  /* #photo-1,
+  #photo-2,
+  #photo-3 {
+    width: auto;
+    height: auto;
+  } */
+
+  section div:has(img#photo-1) {
+    width: 319px;
+    /* height: 212px; */
+  }
+
+  #photo-1 {
+    height: 212px;
+    width: 150px;
+  }
+
+  section div:has(img#photo-2) #photo-2 {
+    width: 155px;
+    height: auto;
+  }
+
+  #photo-3 {
+    height: 155px;
+    width: 150px;
+    object-fit: cover;
+    aspect-ratio: 2;
+  }
+
+  section .gallery {
+    gap: 15px;
+  }
+
+  section > .small {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .product-list {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .product-list > div {
+    width: 135px;
+    height: 135px;
+    object-fit: contain;
+  }
+
+  .product-list > div p {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  .product-list > div img {
+    height: 90px;
+    left: 7px;
+  }
+
+  .product-image {
+    height: auto;
+  }
+
+  .product-image img {
+    height: 285px;
+  }
+
+  .product-detail h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .product-detail p {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  .product-section {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .product-section p.price {
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .product-section h2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-bottom: 10px;
+  }
+
+  .product-description {
+    width: 100%;
+  }
+
+  .product-description p {
+    font-size: 12px;
+    line-height: 14.4px;
+    margin-bottom: 30px;
+  }
+
+  iframe {
+    margin: 0 40px;
+    width: 80%;
+    height: 284px;
+  }
+
+  .store-title,
+  .store-p {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .store-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .store-p,
+  .store-location .card p {
+    font-size: 12px;
+    line-height: 14.4px;
+    margin-bottom: 20px;
+  }
+
+  .store-location {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 36.5px;
+  }
+
+  .store-location > div {
+    width: 100%;
+  }
+
+  .store-location .card {
+    padding: 20px 24px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .store-location .card h3 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+
+  .form {
+    width: 75%;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+
+  .form-element {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .form-element label {
+    font-size: 12px;
+    line-height: 14.4px;
+    font-weight: 700;
+    align-self: flex-start;
+  }
+
+  .form-element input {
+    height: 23px;
+    padding: 5px 16px;
+    border-radius: 5px;
+    font-size: 10px;
+    line-height: 12px;
+    width: 90%;
+  }
+
+  #message-label {
+    margin-top: 0;
+  }
+
+  #message {
+    margin-bottom: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 20px 40px;
+    gap: 10px;
+    margin-top: 40px;
+  }
+
+  footer span {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  footer > div {
+    width: 100%;
+    gap: 10px;
+  }
+
+  footer .logo-icon,
+  footer .icon-box {
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer .logo-icon {
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer .logo {
+    width: 145px;
+  }
+
+  footer .indent {
+    text-indent: 10%;
+    width: 100%;
+  }
+}
